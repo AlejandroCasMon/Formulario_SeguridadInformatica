@@ -16,7 +16,9 @@ const Cuestionario = () => {
 
     const registrarUsuario = () => {
         if (nombre!=null && paterno!=null && materno!=null && fecha!=null && direccion!=null && telefono!=null && correo!=null && password!=null && passwordConfirm!=null) {
-            alert("Usuairo registrado con exito!!");
+            if (validarFecha){
+                alert("Usuairo registrado con exito!!");
+            }
         }else {
             alert("Faltan campos por rellenar");
         }
